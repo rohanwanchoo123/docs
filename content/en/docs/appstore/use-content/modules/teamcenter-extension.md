@@ -12,7 +12,7 @@ The [Teamcenter Extension](https://marketplace.mendix.com/link/component/225544)
 
 The Teamcenter Extension offers a list of use cases for which domain models and microflows can be created. After you select a use case, it uses an import mapping approach similar to Mendix [import mapping](/refguide/import-mappings/). Here, the Teamcenter Extension allows you to select data from the business model of your Teamcenter instance. Based on the selected use case, the import mapping and, for some use cases, additional configurations, the Teamcenter Extension generates and updates the domain model for your integration and generates one or more ready-to-use microflows that you can drag and drop into your application logic.
 
-The extension offers the following integration options:
+The extension offers the following integration options:....
 
 * Get item revisions
 * Get workspace objects
