@@ -30,7 +30,8 @@ The Teamcenter Extension is free to download and use. You can, however, require 
 To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. 
 * If your Studio Pro version falls between 10.6.5 and 10.7, please utilize Teamcenter Extension V 1.0.0
 * If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0
-* Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and then import them into your version.
+* Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and 
+  then import them into your version.
 
 ### 1.4 Dependencies
 
@@ -109,14 +110,15 @@ To open the Teamcenter Extension in Studio Pro, go to **Extensions** > **Teamcen
 
 The **Menu** tab displays use cases or actions you can create artifacts for using the extension.
 
-{{< figure src="/attachments/appstore/modules/teamcenter-extension/settings-tab.png" max-width=50% >}}
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/b15bf583-3295-4e09-99bb-420f9fb2c56a)
 
-The **History** tab displays the history of all artefacts
+The **History** tab displays the history of all journeys carried out in the Extension
 
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/6b831965-3b64-4afb-8a6d-b6d42a2db7d2)
 
 The **Settings** tab allows you to provide details of your Teamcenter instance to connect to, while using the extension. The **Settings** tab displays the Teamcenter configuration page. Here you can provide your Teamcenter Instance details to connect to while building your app. Click **Edit** to open a panel to enter details. The certificate path should be relative to the app directly.
 
-{{< figure src="/attachments/appstore/modules/teamcenter-extension/teamcenter-configuration.png" >}}
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/2ea468ea-e1ca-441f-bb92-e736f99eadae)
 
 The extension supports both HTTP and HTTPS connections. Additionally, it supports certificates that have *.crt* and *.pfx* file extensions.
 
