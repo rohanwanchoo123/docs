@@ -27,9 +27,12 @@ The Teamcenter Extension is free to download and use. You can, however, require 
 
 ### 1.3 Pre-requisites {#prerequisities}
 
-You must use Teamcenter Extension with a Studio Pro version between 10.6.5 to 10.8. Mendix recommends using Studio Pro version [10.6.7](/releasenotes/studio-pro/10.6/#1067), as it is the medium-term support (MTS) version.
+To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. 
+* If your Studio Pro version falls between 10.6.5 and 10.7, please utilize Teamcenter Extension V 1.0.0
+* If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0
+* Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and then import them into your version.
 
-### 1.4 Dependencies 
+### 1.4 Dependencies
 
 You must have these Marketplace modules installed:
 
@@ -102,11 +105,14 @@ This feature is designed specifically for generating microflows and domain model
 
 ### 3.2 Landing Page {#homepage}
 
-To open the Teamcenter Extension in Studio Pro, go to **View** > **Teamcenter**. The landing page opens with two tabs: **Menu** and **Settings**.
+To open the Teamcenter Extension in Studio Pro, go to **Extensions** > **Teamcenter Extension** > **Teamcenter Extension**. The landing page opens with three tabs: **Menu**, **History** and **Settings**. If you are using V 1.0.0, the Teamcenter Extension is available under **View** > **Teamcenter Extension**
 
 The **Menu** tab displays use cases or actions you can create artifacts for using the extension.
 
 {{< figure src="/attachments/appstore/modules/teamcenter-extension/settings-tab.png" max-width=50% >}}
+
+The **History** tab displays the history of all artefacts
+
 
 The **Settings** tab allows you to provide details of your Teamcenter instance to connect to, while using the extension. The **Settings** tab displays the Teamcenter configuration page. Here you can provide your Teamcenter Instance details to connect to while building your app. Click **Edit** to open a panel to enter details. The certificate path should be relative to the app directly.
 
