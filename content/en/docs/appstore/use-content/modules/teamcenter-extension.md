@@ -28,7 +28,7 @@ The Teamcenter Extension is free to download and use. You can, however, require 
 ### 1.3 Pre-requisites {#prerequisities}
 
 To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. 
-* If your Studio Pro version falls between 10.6.5 and 10.7, please utilize Teamcenter Extension V 1.0.0
+* If your Studio Pro version falls between 10.6.5 and 10.7, please use Teamcenter Extension V 1.0.0
 * If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0
 * Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and 
   then import them into your version.
@@ -112,9 +112,15 @@ The **Menu** tab displays use cases or actions you can create artifacts for usin
 
 ![image](https://github.com/rohanwanchoo123/docs/assets/157635704/b15bf583-3295-4e09-99bb-420f9fb2c56a)
 
-The **History** tab displays the history of all journeys carried out in the Extension
+The **History** tab displays the history of all journeys or actions carried out in the Extension.
 
 ![image](https://github.com/rohanwanchoo123/docs/assets/157635704/6b831965-3b64-4afb-8a6d-b6d42a2db7d2)
+
+Here you can view details of each journey, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
+
+You can also edit, duplicate or a delete journey. "Edit" allows you to edit your domain model (adding/editing entities and associations), and re-generating the microflows. Please note this will overwrite previously generated microflows and the entities. You can also choose to duplicate your journey, which simply clones your domain models and microflows. The delete operation deletes all the entities and microflows associated with the journey
+
+On selecting each item in the journey list, the extension performs a validation check to see if the Teamcenter objects, entities and microflows still exist and are valid. The results are reported in the "Validation" section.
 
 The **Settings** tab allows you to provide details of your Teamcenter instance to connect to, while using the extension. The **Settings** tab displays the Teamcenter configuration page. Here you can provide your Teamcenter Instance details to connect to while building your app. Click **Edit** to open a panel to enter details. The certificate path should be relative to the app directly.
 
