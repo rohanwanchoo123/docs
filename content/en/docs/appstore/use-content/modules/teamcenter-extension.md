@@ -35,11 +35,9 @@ To use the Teamcenter Extension, the minimum version of Mendix Studio Pro requir
 
 ### 1.4 Dependencies
 
-You must have these Marketplace modules installed:
+You must have the * [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
 
-* [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627)
-
-* [Community Commons](https://marketplace.mendix.com/link/component/170)
+If you are using Teamcenter Extension v 1.0.0, you also need the * [Community Commons](https://marketplace.mendix.com/link/component/170) module
 
 ### 1.5 Demo App
 
