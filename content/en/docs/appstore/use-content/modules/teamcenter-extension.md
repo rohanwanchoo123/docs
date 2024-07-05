@@ -27,15 +27,13 @@ The Teamcenter Extension is free to download and use. You can, however, require 
 
 ### 1.3 Pre-requisites {#prerequisities}
 
-To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. 
-* If your Studio Pro version falls between 10.6.5 and 10.7, please use Teamcenter Extension V 1.0.0
-* If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0
-* Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and 
-  then import them into your version.
+To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. Due to a breaking change in the extensibility framework, Teamcenter Extension V 1.0.0 can be used in Studio Pro versions that fall between 10.6.5 and 10.7. If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0.
+
+Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and   then import them into your version.
 
 ### 1.4 Dependencies
 
-You must have the * [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
+Please make sure to have the * [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
 
 If you are using Teamcenter Extension v 1.0.0, you also need the * [Community Commons](https://marketplace.mendix.com/link/component/170) module
 
@@ -104,7 +102,8 @@ This feature is designed specifically for generating microflows and domain model
 
 ### 3.2 Landing Page {#homepage}
 
-To open the Teamcenter Extension in Studio Pro, go to **Extensions** > **Teamcenter Extension** > **Teamcenter Extension**. The landing page opens with three tabs: **Menu**, **History** and **Settings**. If you are using V 1.0.0, the Teamcenter Extension is available under **View** > **Teamcenter Extension**
+To open the Teamcenter Extension in Studio Pro, go to **Extensions** > **Teamcenter Extension** > **Teamcenter Extension**. The landing page will open with three tabs: **Menu**, **History** and **Settings**. 
+If you are using Studio Pro versions 10.7 or lower, the Teamcenter Extension is available under **View** > **Teamcenter Extension**. Please see **Pre-requisites** section on version dependencies between Studio Pro and Teamcenter Extension
 
 The **Menu** tab displays use cases or actions you can create artifacts for using the extension.
 
@@ -116,7 +115,7 @@ The **History** tab displays the history of all journeys or actions carried out 
 
 Here you can view details of each journey, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
 
-You can also edit, duplicate or a delete journey. "Edit" allows you to edit your domain model (adding/editing entities and associations), and re-generating the microflows. Please note this will overwrite previously generated microflows and the entities. You can also choose to duplicate your journey, which simply clones your domain models and microflows. The delete operation deletes all the entities and microflows associated with the journey
+You can also edit, duplicate or a delete journey. "Edit" allows you to modify the artefacts of your journey such as domain model (by adding/editing entities and associations), and subsequently update microflows. Please note this will overwrite previously generated microflows and the entities. You can also choose to duplicate your journey, which will simpl clone your domain models and microflows. The delete operation will delete the integration from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
 
 On selecting each item in the journey list, the extension performs a validation check to see if the Teamcenter objects, entities and microflows still exist and are valid. The results are reported in the "Validation" section.
 
