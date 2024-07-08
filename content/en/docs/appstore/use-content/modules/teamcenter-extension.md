@@ -23,13 +23,13 @@ The extension offers the following integration options:....
 
 ### 1.2 License {#license}
 
-The Teamcenter Extension is free to download and use. You can, however, require a Teamcenter (Author or Consumer) license to connect to Teamcenter.
+The Teamcenter Extension is free to download and use. You may, however, require a Teamcenter (Author or Consumer) license to connect to Teamcenter.
 
 ### 1.3 Pre-requisites {#prerequisities}
 
 To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. Due to a breaking change in the extensibility framework, Teamcenter Extension V 1.0.0 can be used in Studio Pro versions that fall between 10.6.5 and 10.7. If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0.
 
-Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and   then import them into your version.
+Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and   then import them into your version. However, we recommend using the latest MTS or LTS Studio Pro version.
 
 ### 1.4 Dependencies
 
