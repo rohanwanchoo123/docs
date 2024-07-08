@@ -109,17 +109,17 @@ The **Menu** tab displays use cases or actions you can create artifacts for usin
 
 ![image](https://github.com/rohanwanchoo123/docs/assets/157635704/843cb54e-3b14-4a81-b4c0-cf4227d1ba40)
 
-The **History** tab displays the history of all journeys or actions carried out in the Extension.
+The **History** tab displays the history of all actions (also referred as integrations) carried out in the Extension.
 
 ![image](https://github.com/rohanwanchoo123/docs/assets/157635704/e7206b0f-babe-4a24-9073-a8a6fc2b2719)
 
 Here you can view details of each action, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
 
-You can also edit, duplicate or delete an action. "Edit" allows you to modify the artifacts such as domain model (by adding/editing entities, attributes and associations), and subsequently update microflows. 
+You can also edit, duplicate or delete an action. The "Edit" operation allows you to modify an existing action by updating the domain model and microflows. When you click on Edit, it will take you to the import mapping page, where you can add or edit entities, attributes, and associations, subsequently updating the domain model and microflows
 
-You can also choose to duplicate your action, which will first clone your domain models and microflows and then allow you to edit to re-genrate artifacts accordingly. This operation will not modify any existing actions. 
+The "Duplicate" operation allows you to create a new action based on an existing one. When you select an action and click on Duplicate, it will clone the action and tkae you to the import mapping page, where you can modify your mapping and subsequently create new domain model and microflows. This operation does not modify any of the existing action.
 
-The delete operation will delete the integration from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
+The "Delete" operation will delete the selected action from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
 
 On selecting each item in the action list, the extension performs a validation check to see if the Teamcenter objects, entities and microflows still exist and are valid. The results are reported in the "Validation" section.
 
