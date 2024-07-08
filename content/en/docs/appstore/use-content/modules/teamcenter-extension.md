@@ -33,13 +33,13 @@ Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In s
 
 ### 1.4 Dependencies
 
-Please make sure to have the * [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
+Please make sure to have the [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
 
-If you are using Teamcenter Extension v 1.0.0, you also need the * [Community Commons](https://marketplace.mendix.com/link/component/170) module
+If you are using Teamcenter Extension v 1.0.0, you also need the [Community Commons](https://marketplace.mendix.com/link/component/170) module
 
 ### 1.5 Demo App
 
-To see Teamcenter Extension in action, download and play with the Teamcenter Extension Sample App, which is available for free on the Mendix Marketplace.
+To see Teamcenter Extension in action, download and play with the Teamcenter Extension Sample App, which is available for free on the [Mendix Marketplace](https://marketplace.mendix.com/link/component/225910).
 
 ## 2 Installation
 
@@ -51,27 +51,27 @@ Follow the instructions in [Using Marketplace Content](/appstore/use-content/) t
 
 #### 3.1.1 Get Item Revisions from Teamcenter {#getitemrevision}
 
-The `Get ItemRevision` action allows you to generate a microflow to search for and retrieve `ItemRevisions` or its specialization from Teamcenter and the corresponding domain model. The resulting microflow implements the saved query `Item Revision...` from Teamcenter.
+The `Get ItemRevision` action allows you to generate the domain model and microflow to search for and retrieve `ItemRevisions` or its specialization. The resulting microflow implements the saved query `Item Revision...` from Teamcenter.
 
 #### 3.1.2 Get Workspace Objects {#getworkspaceobjects}
 
-The `Get Workspace Objects` action allows you to configure and generate a microflow to search for and retrieve workspace objects or their specialization from Teamcenter and the corresponding domain model. This action implements the saved query `General..` from Teamenter
+The `Get Workspace Objects` action allows you to configure and generate the domain model and microflow to search for and retrieve Workspace Objects or their specialization from Teamcenter. This action implements the saved query `General..` from Teamenter
 
 #### 3.1.3 Create Item and Item Revision {#createitem-and-itemrevision}
 
-The `Create Item and Item Revision` action allows you to configure and generate a microflow to create an Item with `ItemRevision` or its specializations in Teamcenter and the corresponding domain model. The resulting microflow implements the `Create Object and Update Properties` actions from the Teamcenter Connector. With the `Create Object` action, the `Item` and `ItemRevision` get created in Teamcenter, setting the Teamcenter properties that need to be set upon creation. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
+The `Create Item and Item Revision` action allows you to configure and generate the domain model and microflow to create an Item with `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Create Object and Update Properties` actions from the Teamcenter Connector. With the `Create Object` action, the `Item` and `ItemRevision` get created in Teamcenter, setting the Teamcenter properties that need to be set upon creation. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
 
 #### 3.1.4 Update Item and Item Revision {#updateitem-and-itemrevision}
 
-The `Update Item and Item Revision` action allows you to generate a microflow to update an `Item` with `ItemRevision` or their specializations in Teamcenter and the corresponding domain model. The resulting microflows implements the `Update Properties` action from the Teamcenter Connector. 
+The `Update Item and Item Revision` action allows you to generate the domain model and microflow to update an `Item` with `ItemRevision` or their specializations in Teamcenter. The resulting microflows implements the `Update Properties` action from the Teamcenter Connector. 
 
 #### 3.1.5 Revise Item Revision {#reviseitem-and-itemrevision}
 
-The `Revise Item and Item Revision` action allows you to generate a microflow to revise an `ItemRevision` or its specializations in Teamcenter and the corresponding domain model. The resulting microflow implements the `Revise Object and Update Properties` actions from the Teamcenter Connector. With the `Revise Object` action, a new `ItemRevision` is created, setting the Teamcenter properties that need to be set upon revising. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
+The `Revise Item and Item Revision` action allows you to generate the domain model and microflow to revise an `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Revise Object and Update Properties` actions from the Teamcenter Connector. With the `Revise Object` action, a new `ItemRevision` is created, setting the Teamcenter properties that need to be set upon revising. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
 
 #### 3.1.6 Get Structures
 
-The `Get Structures` action allows you to generate microflows and corresponding domain model to configure a BOM window and retrieve structure data from Teamcenter. This feature supports the retrieval of structures with the following:
+The `Get Structures` action allows you to generate the domain model and microflows to configure a BOM window and retrieve structure data from Teamcenter. This feature supports the retrieval of structures with the following:
 
 * `RevisionRule` (or default `RevisionRule`)
 * `VariantRule`
@@ -84,7 +84,7 @@ Depending on the configuration, microflows are generated to do the following:
 * Retrieve `VariantRules` (implementing the `Get Variant Rule` action from the Teamcenter Connector)
 * Expand a single `BOMLine` (implementing the `Expand One Level 2` action from the Teamcenter Connector)
 * Expand all `BOMLines` (implementing the `Expand All Levels` action from the Teamcenter Connector)
-* Close the `BOMWindow` (implementing the `Close BIM Window`s action from the Teamcenter Connector)
+* Close the `BOMWindow` (implementing the `Close BOM Window`s action from the Teamcenter Connector)
 * Get the root `BOMLine` for a `BOMWindow`.
 
 To work with structures, such as BOMs, you need to first create a BOM window in Teamcenter. One can retrieve the root BOM Line from the BOM window and from there start expanding the structure either line by line or with all BOM Lines at the same time. The BOM Lines define the structure (based on the configuration you passed when generating the BOM window). Each BOM Line is associated with a single `ItemRevision`.
@@ -107,17 +107,21 @@ If you are using Studio Pro versions 10.7 or lower, the Teamcenter Extension is 
 
 The **Menu** tab displays use cases or actions you can create artifacts for using the extension.
 
-![image](https://github.com/rohanwanchoo123/docs/assets/157635704/b15bf583-3295-4e09-99bb-420f9fb2c56a)
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/542e7fdd-ae08-4cb9-8ec9-4b27106577ac)
 
 The **History** tab displays the history of all journeys or actions carried out in the Extension.
 
 ![image](https://github.com/rohanwanchoo123/docs/assets/157635704/6b831965-3b64-4afb-8a6d-b6d42a2db7d2)
 
-Here you can view details of each journey, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
+Here you can view details of each action, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
 
-You can also edit, duplicate or a delete journey. "Edit" allows you to modify the artefacts of your journey such as domain model (by adding/editing entities and associations), and subsequently update microflows. Please note this will overwrite previously generated microflows and the entities. You can also choose to duplicate your journey, which will simpl clone your domain models and microflows. The delete operation will delete the integration from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
+You can also edit, duplicate or delete an action. "Edit" allows you to modify the artifacts such as domain model (by adding/editing entities, attributes and associations), and subsequently update microflows. 
 
-On selecting each item in the journey list, the extension performs a validation check to see if the Teamcenter objects, entities and microflows still exist and are valid. The results are reported in the "Validation" section.
+You can also choose to duplicate your action, which will first clone your domain models and microflows and then allow you to edit to re-genrate artifacts accordingly. This operation will not modify any existing actions. 
+
+The delete operation will delete the integration from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
+
+On selecting each item in the action list, the extension performs a validation check to see if the Teamcenter objects, entities and microflows still exist and are valid. The results are reported in the "Validation" section.
 
 The **Settings** tab allows you to provide details of your Teamcenter instance to connect to, while using the extension. The **Settings** tab displays the Teamcenter configuration page. Here you can provide your Teamcenter Instance details to connect to while building your app. Click **Edit** to open a panel to enter details. The certificate path should be relative to the app directly.
 
@@ -140,7 +144,7 @@ In the Teamcenter Extension, the import mapping consists of the following steps:
 
 #### 3.3.1 Object mapping {#objectmapping}
 
-Clicking any one of the empty box in the import mapping page opens the object mapping dialog. On the left side of the dialog, a tree with all relevant business objects available from the configured Teamcenter instance is displayed. If you have created any custom business objects in Teamcenter BMIDE, those objects will be shown as well. The right side shows a tree of all relevant entities in your Mendix app.
+Clicking any one of the empty boxes in the import mapping page opens the object mapping dialog. On the left side of the dialog, a tree with all relevant business objects available from the configured Teamcenter instance is displayed. If you have created any custom business objects in Teamcenter BMIDE, those objects will be shown as well. The right side shows a tree of all relevant entities in your Mendix app.
 
 The relevant objects and entities are dependent on the actions you are configuring. For example, for the action to get `ItemRevisions` from Teamcenter, the Teamcenter tree has an `ItemRevision` as its root object. That means that, for this action, you can only select `ItemRevisions` or its specializations. Similarly, in this example, the Mendix tree has the `TcConnector.ItemRevision` entity as its root entity.
 
@@ -162,12 +166,12 @@ In the import mapping sidebar, you can configure which Teamcenter properties, re
 
 The sidebar shows all properties, references, and relations for the configured Teamcenter object. Depending on the use case, each one of them is accompanied with check boxes for reading ({{% icon name="view" %}}) and writing ({{% icon name="pencil" %}}) for you to configure what to include when retrieving data from or creating data in Teamcenter.
 
-You often see that check boxes are selected by default or grayed out. In general, the following rules apply:
+You often see that check boxes are selected by default or greyed out. In general, the following rules apply:
 
 1. Properties that are already available on the Mendix entity or one of its generalizations are selected by default and cannot be unchecked.
 2. Properties, references, and relations for Marketplace entities are disabled by default, as it is not good practice to change Mendix marketplace content.
 
-As an example, if a check box for reading ({{% icon name="view" %}}) is selected and grayed out, it means that property already exists as an attribute on the selected object or one of its generalizations. Similarly, if a check box for writing ({{% icon name="pencil" %}}) is selected and grayed out, it means the property is required during creation or revision of the selected object.
+As an example, if a check box for reading ({{% icon name="view" %}}) is selected and greyed out, it means that property already exists as an attribute on the selected object or one of its generalizations. Similarly, if a check box for writing ({{% icon name="pencil" %}}) is selected and greyed out, it means the property is required during creation or revision of the selected object.
 
 {{< figure src="/attachments/appstore/modules/teamcenter-extension/attributes-associations.png" max-width=60% >}}
 
