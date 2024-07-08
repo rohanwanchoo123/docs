@@ -115,9 +115,9 @@ The **History** tab displays the history of all actions (also referred as integr
 
 Here you can view details of each action, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
 
-You can also edit, duplicate or delete an action. The "Edit" operation allows you to modify an existing action by updating the domain model and microflows. When you click on Edit, it will take you to the import mapping page, where you can add or edit entities, attributes, and associations, subsequently updating the domain model and microflows
+You can also edit, duplicate or delete an action. The "Edit" operation allows you to modify an existing action and updating existing domain model and microflows. When you click on Edit, it will take you to the import mapping page, where you can add or edit entities, attributes, and associations, subsequently updating the domain model and microflows
 
-The "Duplicate" operation allows you to create a new action based on an existing one. When you select an action and click on Duplicate, it will clone the action and tkae you to the import mapping page, where you can modify your mapping and subsequently create new domain model and microflows. This operation does not modify any of the existing action.
+The "Duplicate" operation allows you to create a new action based on an existing one. When you click Duplicate, it will clone the selected action and take you to the import mapping page, where you can modify your mapping and subsequently create new domain model and microflows. This operation does not modify any of existing actions.
 
 The "Delete" operation will delete the selected action from the list. It will, however, not delete the corresponding entities and microflows since they may impact pages and/or other integrations.
 
