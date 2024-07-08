@@ -107,11 +107,11 @@ If you are using Studio Pro versions 10.7 or lower, the Teamcenter Extension is 
 
 The **Menu** tab displays use cases or actions you can create artifacts for using the extension.
 
-![image](https://github.com/rohanwanchoo123/docs/assets/157635704/542e7fdd-ae08-4cb9-8ec9-4b27106577ac)
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/843cb54e-3b14-4a81-b4c0-cf4227d1ba40)
 
 The **History** tab displays the history of all journeys or actions carried out in the Extension.
 
-![image](https://github.com/rohanwanchoo123/docs/assets/157635704/6b831965-3b64-4afb-8a6d-b6d42a2db7d2)
+![image](https://github.com/rohanwanchoo123/docs/assets/157635704/e7206b0f-babe-4a24-9073-a8a6fc2b2719)
 
 Here you can view details of each action, such as entities and microflows created, Teamcenter URL used to connect with, preview of the import mapping and much more. 
 
