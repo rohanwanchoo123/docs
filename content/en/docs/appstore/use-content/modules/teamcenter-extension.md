@@ -27,21 +27,28 @@ The Teamcenter Extension is free to download and use. You may, however, require 
 
 ### 1.3 Pre-requisites {#prerequisities}
 
-To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. Due to a breaking change in the extensibility framework, Teamcenter Extension V 1.0.0 can be used in Studio Pro versions that fall between 10.6.5 and 10.7. If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0.
+To use the Teamcenter Extension, the minimum version of Mendix Studio Pro required is 10.6.5. Due to a change in the Extensibility Framework, Teamcenter Extension V 1.0.0 can be used in Studio Pro versions that fall between 10.6.5 and 10.7. If your version is 10.12 or higher, please use Teamcenter Extension V 2.0.0.
 
-Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artefacts and   then import them into your version. However, we recommend using the latest MTS or LTS Studio Pro version.
+This means Teamcenter Extension cannot be used if you are using versions 10.8 - 10.11. In such cases, a possible workaround is to use the Extension in the recommended versions of Studio Pro first, create necessary artifacts and then import them into your version. However, we always recommend using the latest MTS or LTS Studio Pro version.
 
-### 1.4 Dependencies
+### 1.4 Dependencies (#dependencies)
 
-Please make sure to have the [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace
+Please make sure to have the [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627) modules installed from the marketplace. 
 
 If you are using Teamcenter Extension v 1.0.0, you also need the [Community Commons](https://marketplace.mendix.com/link/component/170) module
 
-### 1.5 Demo App
+The table below outlines version compatiblity between the three products
+
+| Teamcenter Extension  | Teamcenter Connector | Mendix Studio Pro |
+| ------------- | ------------- | ------------- |
+| 1.0.0  | 3.6.1, 3.6.0, 3.5.0  | 10.6.5 thru 10.7  |
+| 2.0.0  | 2406, 3.6.1 3.6.0, 3.5.0  | 10.12.1 and above  |
+
+### 1.5 Demo App (#demoapp)
 
 To see Teamcenter Extension in action, download and play with the Teamcenter Extension Sample App, which is available for free on the [Mendix Marketplace](https://marketplace.mendix.com/link/component/225910).
 
-## 2 Installation
+## 2 Installation (#installation)
 
 Follow the instructions in [Using Marketplace Content](/appstore/use-content/) to import the Teamcenter Extension into your app.
 
