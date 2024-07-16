@@ -42,7 +42,7 @@ The table below outlines version compatiblity between the three products
 | Teamcenter Extension  | Teamcenter Connector | Mendix Studio Pro |
 | ------------- | ------------- | ------------- |
 | 1.0.0  | 3.6.1, 3.6.0, 3.5.0  | 10.6.5 thru 10.7  |
-| 2.0.0  | 2406, 3.6.1 3.6.0, 3.5.0  | 10.12.1 and above  |
+| 2.0.0  | 2406  | 10.12.1 and above  |
 
 ### 1.5 Demo App (#demoapp)
 
