@@ -31,7 +31,7 @@ The compatibility between Teamcenter Extension and Studio Pro is as follows:
 
 * Teamcenter Extension V 1.0.0 is compatible with Studio Pro versions between 10.6.5 and 10.7.
 
-* Teamcenter Extension V 2.0.0 is compatible with Studio Pro version 10.12 or higher.
+* Teamcenter Extension V 2.0.0 is compatible with Studio Pro version 10.12.1 or higher.
 
 {{% alert color="info" %}}Teamcenter Extension is not compatible with Studio Pro versions between 10.8 to 10.11. </br></br>If you use one of these Studio Pro versions, a possible workaround is to use Teamcenter Extension in one of the compatible versions of Studio Pro first, create necessary artifacts and then import them into your version. However, Mendix always recommends using the latest MTS or LTS Studio Pro version.{{% /alert %}}
 
@@ -127,13 +127,13 @@ The landing page has with three tabs: **Menu**, **History**, and **Settings**.
 
 The **Menu** tab displays use cases or actions you can create artifacts for using Teamcenter Extension.
 
-{{< figure src="/attachments/appstore/use-content/modules/teamcenter-extension/menu-tab.png" >}}
+![image](https://github.com/user-attachments/assets/750110c7-c609-4899-a262-4b7f9ea2332a)
 
 #### 3.2.2 History Tab
 
 The **History** tab displays the history of all actions (also referred as integrations) carried out in Teamcenter Extension.
 
-{{< figure src="/attachments/appstore/use-content/modules/teamcenter-extension/history-tab.png" >}}
+![image](https://github.com/user-attachments/assets/80c6f074-0eb1-4d1f-9859-f5f28a5026e4)
 
 On the **History** tab, you can view details of each action, such as entities and microflows created, Teamcenter URL used to connect with, the preview of the import mapping, and much more. 
 
@@ -160,7 +160,7 @@ If you select an item in the **Action** list, Teamcenter Extension performs a va
 
 The **Settings** tab displays the Teamcenter configuration page. 
 
-{{< figure src="/attachments/appstore/use-content/modules/teamcenter-extension/settings-tab.png" max-width=60% >}}
+![image](https://github.com/user-attachments/assets/c424a3bc-c841-43bd-a32d-14340330961d)
 
 On the **Settings** tab, you can provide your Teamcenter Instance details to connect to, while building your app and using Teamcenter Extension. Click **Edit** to open a panel to enter details. The certificate path should be relative to the app directly.
 
