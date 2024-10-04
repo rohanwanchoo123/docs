@@ -14,11 +14,13 @@ Teamcenter Extension offers a list of use cases for which domain models and micr
 
 Teamcenter Extension offers the following integration options:
 
-* Get item revisions
-* Get workspace objects
-* Create item and item revision
-* Update item and item revision
-* Revise item revisions
+* Search Item Revisions
+* Create Item and Item Revision
+* Update Item and Item Revision
+* Revise Item Revision
+* Search Datasets
+* Get Datasets for Item Revision
+* Search workspace objects
 * Get structures
 
 ### License {#license}
@@ -32,6 +34,8 @@ The compatibility between Teamcenter Extension and Studio Pro is as follows:
 * Teamcenter Extension V 1.0.0 is compatible with Studio Pro versions between 10.6.5 and 10.7.
 
 * Teamcenter Extension V 2.0.0 is compatible with Studio Pro version 10.12.1 or higher.
+  
+* Teamcenter Extension V 3.0.0 is compatible with Studio Pro version 10.12.6 or higher.
 
 {{% alert color="info" %}}Teamcenter Extension is not compatible with Studio Pro versions between 10.8 to 10.11. </br></br>If you use one of these Studio Pro versions, a possible workaround is to use Teamcenter Extension in one of the compatible versions of Studio Pro first, create necessary artifacts and then import them into your version. However, Mendix always recommends using the latest MTS or LTS Studio Pro version.{{% /alert %}}
 
@@ -49,8 +53,9 @@ You must have these Marketplace modules installed:
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 3.6.1, V 3.6.0, V 3.5.0 | 10.6.5 thru 10.7 |
 | 2.0.0 | 2406.0.0 | 10.12.1 and above |
+| 3.0.0 | 2406.3.0 | 10.12.6 and above |
 
-{{% alert color="info" %}}If you use Teamcenter Extension V 1.0.0 with Teamcenter Connector V 3.6.1 or below, and want to upgrade to Teamcenter Extension V 2.0.0 and Teamcenter Connector V 2406.0.0, see the [Upgrading Teamcenter Extension V 1.0.0 to V 2.0.0](#upgrade) section.{{% /alert %}}
+{{% alert color="info" %}}If you use Teamcenter Extension V 1.0.0 with Teamcenter Connector V 3.6.1 or below, and want to upgrade to Teamcenter Extension V 3.0.0 and Teamcenter Connector V 2406.3.0, see the [Upgrading Teamcenter Extension V 1.0.0 to V 3.0.0](#upgrade) section.{{% /alert %}}
 
 ### Demo App {#demoapp}
 
@@ -64,29 +69,37 @@ Follow the instructions in [Using Marketplace Content](/appstore/use-content/) t
 
 ### Actions
 
-#### Get Item Revisions from Teamcenter {#getitemrevision}
+#### Search Item Revisions from Teamcenter {#getitemrevision}
 
-The `Get ItemRevision` action allows you to generate the domain model and microflow to search for and retrieve `ItemRevisions` or its specialization. The resulting microflow implements the saved query `Item Revision...` from Teamcenter.
-
-#### Get Workspace Objects {#getworkspaceobjects}
-
-The `Get Workspace Objects` action allows you to configure and generate the domain model and microflow to search for and retrieve Workspace Objects or their specialization from Teamcenter. This action implements the saved query `General..` from Teamcenter
+This action allows you to generate the domain model and microflow to search for and retrieve `ItemRevisions` or its specialization. The resulting microflow implements the saved query `Item Revision...` from Teamcenter.
 
 #### Create Item and Item Revision {#createitem-and-itemrevision}
 
-The `Create Item and Item Revision` action allows you to configure and generate the domain model and microflow to create an Item with `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Create Object and Update Properties` actions from the Teamcenter Connector. With the `Create Object` action, the `Item` and `ItemRevision` get created in Teamcenter, setting the Teamcenter properties that need to be set upon creation. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
+This action allows you to configure and generate the domain model and microflow to create an Item with `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Create Object and Update Properties` actions from the Teamcenter Connector. With the `Create Object` action, the `Item` and `ItemRevision` get created in Teamcenter, setting the Teamcenter properties that need to be set upon creation. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
 
 #### Update Item and Item Revision {#updateitem-and-itemrevision}
 
-The `Update Item and Item Revision` action allows you to generate the domain model and microflow to update an `Item` with `ItemRevision` or their specializations in Teamcenter. The resulting microflows implements the `Update Properties` action from the Teamcenter Connector. 
+This action allows you to generate the domain model and microflow to update an `Item` with `ItemRevision` or their specializations in Teamcenter. The resulting microflows implements the `Update Properties` action from the Teamcenter Connector. 
 
 #### Revise Item Revision {#reviseitem-and-itemrevision}
 
-The `Revise Item and Item Revision` action allows you to generate the domain model and microflow to revise an `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Revise Object and Update Properties` actions from the Teamcenter Connector. With the `Revise Object` action, a new `ItemRevision` is created, setting the Teamcenter properties that need to be set upon revising. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
+This action allows you to generate the domain model and microflow to revise an `ItemRevision` or its specializations in Teamcenter. The resulting microflow implements the `Revise Object and Update Properties` actions from the Teamcenter Connector. With the `Revise Object` action, a new `ItemRevision` is created, setting the Teamcenter properties that need to be set upon revising. With the `Update Properties` action, the remaining properties are updated in Teamcenter.
+
+#### Search Datasets {#getdatasets}
+
+This action allows you to generate the domain model and microflow to search for and retrieve `Datasets` or its specialization. The resulting microflow implements the saved query `Datasets` from Teamcenter.
+
+#### Get Datasets from Item Revision {#getdatasetsfromitemrevision}
+
+This action allows you to generate the domain model and microflow to retrieve datasets for an Item Revision and subsequently download files inside the dataset
+
+#### Get Workspace Objects {#getworkspaceobjects}
+
+This action allows you to configure and generate the domain model and microflow to search for and retrieve Workspace Objects or their specialization from Teamcenter. This action implements the saved query `General..` from Teamcenter
 
 #### Get Structures
 
-The `Get Structures` action allows you to generate the domain model and microflows to configure a BOM window and retrieve structure data from Teamcenter. This feature supports the retrieval of structures with the following:
+This action allows you to generate the domain model and microflows to configure a BOM window and retrieve structure data from Teamcenter. This feature supports the retrieval of structures with the following:
 
 * `RevisionRule` (or default `RevisionRule`)
 * `VariantRule`
@@ -129,7 +142,7 @@ The landing page has with three tabs: **Menu**, **History**, and **Settings**.
 
 The **Menu** tab displays use cases or actions you can create artifacts for using Teamcenter Extension.
 
-{{< figure src="/attachments/appstore/use-content/modules/teamcenter-extension/menu-tab.png" >}}
+![{F0FF5815-835B-4DBC-BC92-B55C32A52E41}](https://github.com/user-attachments/assets/c952b1f3-dcc4-470c-8e3d-df8db30f41a8)
 
 #### History Tab
 
@@ -224,12 +237,12 @@ Once you finished import mapping, click **Generate** to create microflows for th
 
 {{< figure src="/attachments/appstore/use-content/modules/teamcenter-extension/microflow.png" >}}
 
-## Upgrading Teamcenter Extension V 1.0.0 to V 2.0.0 {#upgrade}
+## Upgrading Teamcenter Extension V 1.0.0 to V 3.0.0 {#upgrade}
 
-If you use Teamcenter Extension V 1.0.0 with Teamcenter Connector V 3.6.1 or below, and want to upgrade to Teamcenter Extension V 2.0.0 and Teamcenter Connector V 2406.0.0, perform the following procedure:
+If you use Teamcenter Extension V 1.0.0 with Teamcenter Connector V 3.6.1 or below, and want to upgrade to Teamcenter Extension V 3.0.0 and Teamcenter Connector V 2406.3.0, perform the following procedure:
 
-1. Open your app in Studio Pro version 10.12.1 or higher.
-2. Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) to download [Teamcenter Extension V 2.0.0](https://marketplace.mendix.com/link/component/225544) from the Marketplace and install it.
+1. Open your app in Studio Pro version 10.12.6 or higher.
+2. Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) to download [Teamcenter Extension V 3.0.0](https://marketplace.mendix.com/link/component/225544) from the Marketplace and install it.
 3. When a warning dialog box opens, click **Trust module and enable extension**. Otherwise, Teamcenter Extension will not be installed.
 4. Follow the instructions in [How to Upgrade the Module to a Newer Version](/appstore/use-content/#update-module) to upgrade Teamcenter Connector to V 2406.0.0. Teamcenter Connector V 2406.0.0 has updated domain model that made certain entities and associations in Teamcenter Extension V 1.0.0 redundant. As a result, you get errors after the upgrade.
 
@@ -258,5 +271,5 @@ Using Solution 2 has an advantage: after completing the procedure, the integrati
 As an alternative to solution 1, you can perform the following steps:
 
 1. Delete the microflows generated with Teamcenter Extension V 1.0.0. This will cause errors in the locations where these microflows were used. Keep these errors so that you can identify where the microflows need to be implemented again.
-2. Go to Teamcenter Extension V 2.0.0 and repeat the steps you did before in Teamcenter Extension V 1.0.0. Simply select the same entities and associations, as they already exist in your domain model.
+2. Go to Teamcenter Extension V 3.0.0 and repeat the steps you did before in Teamcenter Extension V 1.0.0. Simply select the same entities and associations, as they already exist in your domain model.
 3. Go over the errors caused by the missing microflows and implement the newly-generated microflows. 
