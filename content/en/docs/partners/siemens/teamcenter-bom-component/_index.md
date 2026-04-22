@@ -23,7 +23,7 @@ The [Teamcenter BOM component](https://marketplace.mendix.com/link/component/259
 * Teamcenter Connector version 2512.0.0 or above. The component depends on its request handler.
 * Access to a Teamcenter environment in version 2512.0.0 or above with appropriate credentials and permissions. The component utilizes new APIs introduced in Teamcenter 2512.0.0, hence cannot be used with older versions of Teamcenter.
 * Teamcenter base platform and Structure Management modules installed.
-* Mendix Studio Pro 10.24.12 or above.
+* Mendix Studio Pro 10.24.12+ and above or 11.5 and above. 
 * A Mendix app with the `TcConnector` module added and configured.
 
 ## Persistence and Propagation
